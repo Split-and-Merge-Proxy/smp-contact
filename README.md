@@ -64,6 +64,7 @@ python -u custom_inference.py
 ```
 
 ## Acknowledges
+- [DeepInter](http://huanglab.phys.hust.edu.cn/DeepInter/)
 - [DeepInteract](https://github.com/BioinfoMachineLearning/DeepInteract)
 - [AlphaFold2](https://github.com/google-deepmind/alphafold)
 - [graphtransformer](https://github.com/graphdeeplearning/graphtransformer)
