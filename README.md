@@ -1,5 +1,5 @@
 # SMP-contact 
-This repository is tor protein-protein contact map prediction task
+This repository is tor protein-protein contact map prediction task.
 
 ## 1. Environment Setup
 
@@ -59,8 +59,8 @@ bash ./scripts/smp/slurm_test.sh
 
 ## 5. Infernce on your custom data
 We already upload the trained weights of SMP in the `./ckpt/smp.pth`, you can directly download it and place it in your own path.
-```python
-python 
+```bash
+python -u custom_inference.py
 ```
 
 ## Acknowledges
