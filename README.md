@@ -58,7 +58,7 @@ bash ./scripts/smp/slurm_test.sh
 
 
 ## 5. Infernce on your custom data
-We already upload the trained weights of SMP in the `./ckpt/smp.pth`, you can directly download it and place it in your own path.
+We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own path.
 ```bash
 python -u custom_inference.py
 ```
