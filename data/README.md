@@ -1,1 +1,1 @@
-Download the data from [PRING - Harvard Dataverse](https://doi.org/10.7910/DVN/22AUPR)
+Download the data from [SMP-contact - Harvard Dataverse](https://doi.org/10.7910/DVN/22AUPR)
