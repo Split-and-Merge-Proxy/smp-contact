@@ -23,7 +23,7 @@ bash ./scripts/deepinter/dist_train.sh
 # Slurm 
 bash ./scripts/deepinter/slurm_train.sh
 ```
-**Note:** you can change the `data_dir`, `data_dir_list`, and `output_dir` to your own desired directory.
+**Note:** you can change the `data_dir`, `data_dir_list`, and `output_dir` in the Shell file to your own directory.
 
 ### SMP
 ```bash
@@ -35,7 +35,7 @@ bash ./scripts/smp/dist_finetune.sh
 bash ./scripts/smp/slurm_pretrain.sh
 bash ./script/smp/slurm_finetune.sh
 ```
-**Note:** you can change the `data_dir`, `data_dir_list`, `resume_checkpoint`, and `output_dir` to your own desired directory.
+**Note:** you can change the `data_dir`, `data_dir_list`, `resume_checkpoint`, and `output_dir` in the Shell file to your own directory.
 
 
 
@@ -58,7 +58,7 @@ bash ./scripts/smp/slurm_test.sh
 
 
 ## 5. Infernce on your custom data
-We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own path.
+We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own directory.
 ```bash
 python -u custom_inference.py
 ```
