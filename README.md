@@ -1,5 +1,5 @@
 # SMP-contact 
-This repository is tor protein-protein contact map prediction task.
+This repository is for the protein-protein contact map prediction task.
 
 ## 1. Environment Setup
 
