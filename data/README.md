@@ -1,1 +1,1 @@
-Download the data from [SMP-contact - Harvard Dataverse](https://doi.org/10.7910/DVN/22AUPR)
+Download the contact data from [SMP - Harvard Dataverse](https://doi.org/10.7910/DVN/22AUPR)
