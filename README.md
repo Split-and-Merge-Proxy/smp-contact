@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 ## 2. Data Preparation
-You can download the contact data from [SMP - Harvard Dataverse](https://doi.org/10.7910/DVN/22AUPR) and place it in the `./data` folder.
+You can download the contact data from [SMP - Harvard Dataverse](https://doi.org/10.7910/DVN/JGDBTB) and place it in the `./data` folder.
 
 ## 3. Training (Optional)
 ### DeepInter
