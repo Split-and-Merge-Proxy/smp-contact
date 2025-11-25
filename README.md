@@ -59,6 +59,7 @@ bash ./scripts/smp/slurm_test.sh
 
 ## 5. Infernce on your custom data
 We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own directory.
+Additionally, we offer a preprocessing script ([preprocess](https://github.com/Split-and-Merge-Proxy/smp-contact/tree/main/preprocess)) that directly converts raw PDB files into pkl‐format input features.
 ```bash
 python -u custom_inference.py
 ```
