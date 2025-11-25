@@ -26,7 +26,7 @@ else
     echo "the fasta file of ${pdb_id} already exists"
 fi
 
-if [ $length -eq 0 ];then
+if [ "$length" -eq 0 ]; then
     echo "The length of the ${pdb_id} is empty"
     exit 2
 fi
