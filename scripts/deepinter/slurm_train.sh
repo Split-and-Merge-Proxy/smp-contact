@@ -21,4 +21,4 @@ srun -p ${PARTITION} \
     --ntasks-per-node=${GPUS_PER_NODE} \
     --cpus-per-task=${CPUS_PER_TASK} \
     --kill-on-bad-exit=1 \
-    python main.py --launcher slurm --bs 1 --train --epochs 20 --s3_dir s3://dh_data_bio/deephomo --data_dir ./data/deephomo --name deepinter --output_dir ./output_deepinter_torch1.8_scheduler_e20_sum_focalloss
+    python main.py --launcher slurm --bs 1 --train --epochs 30 --s3_dir /your/own/ceph/path/to/deephomo --data_list_dir ./data_list/deephomo --name deepinter --output_dir ./output_deepinter

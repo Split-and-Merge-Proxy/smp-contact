@@ -17,35 +17,22 @@ You can download the contact data from [SMP - Harvard Dataverse](https://doi.org
 ## 3. Training (Optional)
 ### DeepInter
 ```bash
-# Pytorch DDP
 bash ./scripts/deepinter/dist_train.sh
-
-# Slurm 
-bash ./scripts/deepinter/slurm_train.sh
 ```
 **Note:** you can change the `data_dir`, `data_dir_list`, and `output_dir` in the Shell file to your own directory.
 
 ### SMP
 ```bash
-# Pytorch launcher
 bash ./scripts/smp/dist_pretrain.sh
 bash ./scripts/smp/dist_finetune.sh
-
-# Slurm launcher
-bash ./scripts/smp/slurm_pretrain.sh
-bash ./script/smp/slurm_finetune.sh
 ```
-**Note:** you can change the `data_dir`, `data_dir_list`, `resume_checkpoint`, and `output_dir` in the Shell file to your own directory.
-
+**Note:** you can change the `data_dir`, `resume_checkpoint`, and `output_dir` in the Shell file to your own directory.
 
 
 ## 4. Evaluations
 ### DeepInter
 ```bash
-# Pytorch launcher
 bash ./scripts/deepinter/dist_test.sh
-# Slurm launcher
-bash ./scripts/deepinter/slurm_test.sh
 ```
 
 ### SMP
@@ -58,27 +45,30 @@ bash ./scripts/smp/slurm_test.sh
 
 ## 5. Reproducing the Results Reported in the Manuscript
 
-To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://doi.org/10.7910/DVN/0QURCP. 
+To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://doi.org/10.7910/DVN/0QURCP and unzip them. 
 
-Then, change the `data_dir in the dist_test.sh script to point to your local path, and run the following command:
+Then, change the `data_dir` in the `dist_test.sh` script to point to your local path, and run the following command:
 ```bash
-bash ./scripts/smp/slurm_test.sh or bash ./scripts/smp/dist_test.sh
+bash ./scripts/smp/dist_test.sh
 ```
+**Note:** you can change the `test_checkpoint_name` in the test script to use homodimer ckpt or heterodimer ckpt for test, and the DeepInter's ckpts are provided by the original paper's author.
 
 The expected results are shown below.
 
 **Homodimer Test Set**
 
-| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
-|----------|----------|----------|----------|----------|----------|----------|
-| 0.81  |  0.80 | 0.79  | 0.77 | 0.79 | 0.77 | 0.72 |
+|Method| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
+|----------|----------|----------|----------|----------|----------|----------|----------|
+|DeepInter| 0.77 | 0.75  |  0.75 | 0.74 | 0.75 | 0.74 | 0.69 |
+|SMP| 0.81  |  0.80 | 0.79  | 0.77 | 0.79 | 0.77 | 0.72 |
 
 
 **Heterodimer Test Set**
 
-| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
-|----------|----------|----------|----------|----------|----------|----------|
-| 0.47  |  0.44 | 0.43  | 0.41 | 0.44 | 0.43 | 0.37 |
+|Method| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
+|----------|----------|----------|----------|----------|----------|----------|----------|
+|DeepInter| 0.42 |  0.37 |  0.36 | 0.35 | 0.36 | 0.37 | 0.32 |
+|SMP| 0.47  |  0.44 | 0.43  | 0.41 | 0.44 | 0.43 | 0.37 |
 
 
 ## 6. Infernce on your custom data
