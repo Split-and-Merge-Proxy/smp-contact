@@ -19,21 +19,21 @@ You can download the contact data from [SMP - Harvard Dataverse](https://doi.org
 ```bash
 bash ./scripts/deepinter_train.sh
 ```
-**Note:** you can change the `data_dir`, and `output_dir` in the Shell file to your own directory.
+**Note:** You need to change the `data_dir`, and `output_dir` in the Shell file to your own directory.
 
 ### SMP
 ```bash
 bash ./scripts/smp_pretrain.sh
 bash ./scripts/smp_finetune.sh
 ```
-**Note:** you can change the `data_dir`, `resume_checkpoint`, and `output_dir` in the Shell file to your own directory.
+**Note:** You need to change the `data_dir`, `resume_checkpoint`, and `output_dir` in the Shell file to your own directory.
 
 
 ## 4. Evaluations
 ```bash
 bash ./scripts/test.sh
 ```
-**Note:** you can change the 
+**Note:** You can modify the `resume_checkpoint` and `output_dir` in the shell script to specify which checkpoints to use.
 
 
 ## 5. Reproducing the Results Reported in the Manuscript
@@ -44,7 +44,7 @@ Then, change the `data_dir` in the `test.sh` script to point to your local path,
 ```bash
 bash ./scripts/test.sh
 ```
-**Note:** you can change the `test_checkpoint_name` in the test script to use homodimer ckpt or heterodimer ckpt for test, and the DeepInter's ckpts are also provided from the original paper.
+**Note:** You can modify the `test_checkpoint_name` in the `test.sh` script to select either the homodimer or heterodimer checkpoint for evaluation. The checkpoints for DeepInter are also provided as released in the original paper.
 
 The expected results are shown below.
 
