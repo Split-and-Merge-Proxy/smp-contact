@@ -63,6 +63,7 @@ Additionally, we offer a preprocessing script ([preprocess](https://github.com/S
 ```bash
 python -u custom_inference.py
 ```
+The output should be a NumPy-format contact map, saved as `contact_map.npy`.
 
 ## Acknowledges
 - [DeepInter](http://huanglab.phys.hust.edu.cn/DeepInter/)
