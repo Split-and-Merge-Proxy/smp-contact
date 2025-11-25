@@ -56,8 +56,25 @@ bash ./scripts/smp/dist_test.sh
 bash ./scripts/smp/slurm_test.sh
 ```
 
+## 5. Reproduce the results reported in the manuscript
+To reproduce the results reportted in the our manuscript, you should first download the processed test set from the XXXXX and palced them to the `./test_set` directorny and change the `data_dir` in the `dist_test.sh` script.
+The excepted results are as follows:
 
-## 5. Infernce on your custom data
+for the homodimer test set
+
+| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
+|----------|----------|----------|----------|----------|----------|----------|
+| 0.81  |  0.80 | 0.79  | 0.77 | 0.79 | 0.77 | 0.72 |
+
+
+for the hetrodimer test set
+
+| P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
+|----------|----------|----------|----------|----------|----------|----------|
+| 0.47  |  0.44 | 0.43  | 0.41 | 0.44 | 0.43 | 0.37 |
+
+
+## 6. Infernce on your custom data
 We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own directory.
 Additionally, we offer a preprocessing script ([preprocess](https://github.com/Split-and-Merge-Proxy/smp-contact/tree/main/preprocess)) that directly converts raw PDB files into pkl‐format input features.
 ```bash

@@ -1,4 +1,4 @@
-To pre-process raw PDB files, follow the steps below.
+To preprocess raw PDB files into pkl-format input features, please follow the steps below.
 
 ## 1. Environment Setup
 ```bash
@@ -13,7 +13,7 @@ https://wwwuser.gwdguser.de/~compbiol/uniclust/2020_03/,
 and download the `ESM-MSA-1b` pre-trained model from
 https://dl.fbaipublicfiles.com/fair-esm/models/esm_msa1b_t12_100M_UR50S.pt.
 
-After downloading, place the paths to the `UniRef_database` and `esm_msa_model` directories in both `gen_homo.sh` and `gen_hetero.sh`.
+After downloading, change the `UniRef_database` and `esm_msa_model` in both `gen_homo.sh` and `gen_hetero.sh` scripts to your own paths.
 
 
 ## 3. Data Pre-processing
