@@ -56,18 +56,25 @@ bash ./scripts/smp/dist_test.sh
 bash ./scripts/smp/slurm_test.sh
 ```
 
-## 5. Reproduce the results reported in the manuscript
-To reproduce the results reportted in the our manuscript, you should first download the processed test set from the XXXXX and palced them to the `./test_set` directorny and change the `data_dir` in the `dist_test.sh` script.
-The excepted results are as follows:
+## 5. Reproducing the Results Reported in the Manuscript
 
-for the homodimer test set
+To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://doi.org/10.7910/DVN/0QURCP. 
+
+Then, change the `data_dir in the dist_test.sh script to point to your local path, and run the following command:
+```bash
+bash ./scripts/smp/slurm_test.sh or bash ./scripts/smp/dist_test.sh
+```
+
+The expected results are shown below.
+
+**Homodimer Test Set**
 
 | P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
 |----------|----------|----------|----------|----------|----------|----------|
 | 0.81  |  0.80 | 0.79  | 0.77 | 0.79 | 0.77 | 0.72 |
 
 
-for the hetrodimer test set
+**Heterodimer Test Set**
 
 | P@1 | P@10 | P@25 | P@50 | P@L/10 | P@L/5 | P@L |
 |----------|----------|----------|----------|----------|----------|----------|
