@@ -40,7 +40,7 @@ bash ./scripts/test.sh
 
 To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://doi.org/10.7910/DVN/0QURCP and unzip them. 
 
-Then, change the `data_dir` in the `test.sh` script to point to your local path, and run the following command:
+Then, change the `data_dir` in the `test.sh` script to point to your local path for processed test sets, and run the following command:
 ```bash
 bash ./scripts/test.sh
 ```

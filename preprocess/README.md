@@ -18,7 +18,7 @@ After downloading, change the `UniRef_database` and `esm_msa_model` in both `gen
 
 ## 3. Data Pre-processing
 ```bash
-python -u gen_tmp_file.py
-python -u gen_pkl.py
+python -u gen_tmp_file.py   # generate a series of intermediate feature files
+python -u gen_pkl.py        # convert the feature files into a pkl-format file
 ```
 We also provide an example pair of PDB files in the `./example` directory to demonstrate how to convert raw PDB structures into pkl-format features.
