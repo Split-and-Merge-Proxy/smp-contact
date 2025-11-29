@@ -38,7 +38,7 @@ bash ./scripts/test.sh
 
 ## 5. Reproducing the Results Reported in the Manuscript
 
-To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://doi.org/10.7910/DVN/0QURCP and unzip them. 
+To reproduce the results reported in our manuscript, first download the processed test sets (`contact_homo_test_set.zip` for homodimers and `contact_hetero_test_set.zip` for heterodimers) from https://huggingface.co/datasets/dh97/contact_test_set and unzip them. 
 
 Then, change the `data_dir` in the `test.sh` script to point to your local path for processed test sets, and run the following command:
 ```bash
@@ -64,7 +64,7 @@ The expected results are shown below.
 |SMP| 0.47  |  0.44 | 0.43  | 0.41 | 0.44 | 0.43 | 0.37 |
 
 
-## 6. Infernce on your custom data
+## 6. Infernce on Your Custom Data
 We have already uploaded the trained weights of SMP in the `./ckpts`, you can directly download it and place it in your own directory.
 Additionally, we offer a preprocessing script ([preprocess](https://github.com/Split-and-Merge-Proxy/smp-contact/tree/main/preprocess)) that directly converts raw PDB files into pkl‐format input features.
 ```bash
